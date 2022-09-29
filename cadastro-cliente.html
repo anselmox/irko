@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="https://irko.silosistema.com.br/Autenticado/assets/global/plugins/bootstrap/css/bootstrap?v=Cgq5T9IF8wuHvz-3wyUBvsylYpe_zF1L_MPcTCiTQDk1"> -->
+    
+ 
+    <link href="//fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    body {
+    color:#333;
+  
+    letter-spacing:-1px;
+    margin: 0 auto;
+    min-height: 75rem;
+  padding-top: 3.5rem;
+  
+    
+}
+    
+    .btn .btn-sm{
+        background-color: #60709d
+    }
+    .modal .modal-header{
+        background-color: #60709d
+    }
+    .tabbable-custom>.tab-content{
+        border-color: #60709d
+    }
+    .tabbable-custom>.nav-tabs>li.active>a, .tabbable-custom>.nav-tabs>li.active>a:hover{
+        background-color: #60709d
+    }
+
+    #transicao-id-2{
+      display: none;
+    }
+    .cor-laranja{color:#f60;}
+    .fundo-laranja{color:#fff; background-color:#f60 ;}
+    .border{border:1px solid #ddd}
+</style>
+</head>
+<body>
+
+    <section class="container-fluid p-3  ">
+        <form role="form" >
+        <section class="row  ">
+            <article class="col-md-12 ">
+            <h3 class="cor-laranja">Cadastro <strong >28092022</strong></h3>
+        </article>
+        </section>
+        <section class=" row ">
+            <article class="col-md-6  m-2 pb-2 rounded-1">
+                <section class="row  mt-1">
+                    <article class="col-md-12 ">
+                   <strong class="silo_card-headertext">Informa&ccedil;&otilde;es do Cliente</strong>
+                   
+                   <span class="silo_card-headertext" id="idHeaderInfoDocs" style="float: right;"><i class="fa fa-info-circle"></i></span>
+                </article>
+                </section>
+
+                <section class="row mt-1">
+                   
+                    <article class="col-md-8 ">
+                        
+
+                        <label class="floatingInput a3label control-label" for="CAMPO_1">CNPJ</label> 
+                        <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@1@@" data-nome="Cadastro" id="CAMPO_1" type="text"  />
+                        
+
+                    </article>
+                    <article class="col-md-2 " style="padding-top:27px;">
+                        
+                        <button type="submit" class="btn  btn-sm rounded-pill fundo-laranja ">Validar</button>
+
+                    </article>
+
+                    <article class="col-md-12" style="display:none;">
+                        <div class="form-group">
+                            <label class="control-label" for="CAMPO_2">Sequencial</label>
+                            <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@2@@" data-nome="Sequencial" disabled="disabled" id="CAMPO_2" type="text" />
+                        </div>
+                    </article>
+
+                    <article class="col-md-12">
+                        <label class="a3label control-label" for="CAMPO_3">Raz&atilde;o Social</label> 
+                        <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@3@@" data-nome="Razão Social" id="CAMPO_3" type="text" />
+                    </article>
+
+
+                    <article class="col-md-12">
+                        <label class="a3label control-label" for="CAMPO_5">Inscri&ccedil;&atilde;o Estatual</label> 
+                <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@5@@" data-nome="Inscrição Estatual" id="CAMPO_5" type="text"  />
+                    </article>
+
+                    <article class="col-md-8 ">
+                        
+
+                        <label class="floatingInput a3label control-label" for="CAMPO_1">CEP</label> 
+                        <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@1@@" data-nome="Cadastro" id="CAMPO_1" type="text"  />
+                        
+
+                    </article>
+                    <article class="col-md-2 " style="padding-top:27px;">
+                        
+                        <button type="submit" class="btn  btn-sm rounded-pill fundo-laranja ">Pesquisar</button>
+
+                    </article>
+
+                    <article class="col-md-10">
+                        <label class="a3label control-label" for="CAMPO_6">Endere&ccedil;o</label> 
+                        <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@6@@" data-nome="Endereço" id="CAMPO_6" type="text" />
+                    </article>
+
+                    <article class="col-md-2">
+                        <label class="a3label control-label" for="CAMPO_7">N&uacute;mero</label> 
+                        <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@7@@" data-nome="Número" id="CAMPO_7" type="text" />
+                    </article>
+
+                    <article class="col-md-10">
+                        <label class="a3label control-label" for="CAMPO_8">Bairro</label> 
+                        <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@8@@" data-nome="Bairro" id="CAMPO_8" type="text" />
+                    </article>
+
+                    <article class="col-md-10">
+                        <label class="a3label control-label" for="CAMPO_10">Cidade</label> 
+                    <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@10@@" data-nome="Cidade" id="CAMPO_10" type="text" />
+                    </article>
+
+                    <article class="col-md-2">
+                        <label class="a3label control-label" for="CAMPO_11">Estado</label> 
+                        <input class="a3formcontrol form-control form-control-sm" data-campo-id="@@11@@" data-nome="Estado" id="CAMPO_11" type="text" />
+                    </article>
+
+                    <div style="display: none">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label class="a3label control-label" for="CAMPO_19">ID</label> 
+                                    <input class="a3formcontrol form-control" data-campo-id="@@19@@" id="CAMPO_19" type="text" />
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="a3label control-label" for="CAMPO_20">Login</label> 
+                                    <input class="a3formcontrol form-control" data-campo-id="@@20@@" id="CAMPO_20" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label class="a3label control-label" for="CAMPO_21">Senha</label> 
+                                    <input class="a3formcontrol form-control" data-campo-id="@@21@@" id="CAMPO_21" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                   
+                </section>
+                
+            </article>
+
+            <article class="col-md-6  m-2 pb-2 rounded-1">
+               
+                <section class="row  mt-1">
+                    <article class="col-md-12">
+                        <strong >Contato</strong>
+                    </article>
+                    <article class="col-md-12 ">
+                        <span class="a3label"></span>
+        
+                        <div id="gridContainerContatos">&nbsp;</div>
+                    </article>
+ 
+                 </section>
+
+                 <section class="row  mt-1">
+                    <article class="col-md-12" style="margin:10px 0px;">
+                    <strong >Sócio e Administrador no Brasil</strong>
+                </article>
+                    <article class="col-md-6">
+                        <label class="a3label control-label" for="CAMPO_16">Representante Legal</label> 
+                        <select class="a3formcontrol form-control form-control-sm" data-campo-id="@@16@@" data-nome="Representante Irko" id="CAMPO_16"></select>
+                    </article>
+
+
+                  
+
+                    <article class="col-md-6">
+                    <label class="a3label control-label" for="CAMPO_17">Procurador S&oacute;cio Estrangeiro</label> 
+                    <select class="a3formcontrol form-control form-control-sm" data-campo-id="@@17@@" data-nome="Representante Sócio Estrangeiro" id="CAMPO_17"></select>
+                    </article>
+
+
+                    <article class="col-md-12" style="display:none;">
+                        
+                        <label class="a3label control-label" for="CAMPO_22">Grid Contato</label>
+                        <textarea class="a3formcontrol form-control" data-campo-id="@@22@@" data-nome="Grid Contato" id="CAMPO_22"></textarea>
+                   
+                </article>
+                 </section>
+
+
+            </article>
+        </form>
+        </section>
+   
+    <div class="portlet light bordered border border-1">
+        <div class="portlet-body form">
+        <form role="form">
+        <div class="form-body" style="padding-top: 5px;">
+        <div class="row">
+        <div class="col-md-12" style="margin-bottom: 12px;">&nbsp;</div>
+        <!-- ***** Dados do documento (esquerdo) ***** -->
+        
+        <div class="col-md-6 border border-dark">
+        <div class="silo_card" id="idDivInfoDocumento">
+        <div class="silo_card-header">
+            <span class="silo_card-headertext">Informa&ccedil;&otilde;es do Cliente</span> 
+            <span class="silo_card-headertext" id="idHeaderInfoDocs" style="float: right;"><i class="fa fa-info-circle"></i></span>
+        </div>
+        
+        <div class="silo_card-body">
+        <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="a3label control-label" for="CAMPO_1">Cadastro</label> 
+                <input class="a3formcontrol form-control" data-campo-id="@@1@@" data-nome="Cadastro" id="CAMPO_1" type="text" />
+            </div>
+        </div>
+        
+        <div class="col-md-2" style="display: none;">
+            <div class="form-group">
+                <label class="control-label" for="CAMPO_2">Sequencial</label>
+                <input class="a3formcontrol form-control" data-campo-id="@@2@@" data-nome="Sequencial" disabled="disabled" id="CAMPO_2" type="text" />
+            </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-5">
+        <div class="form-group"><label class="a3label control-label" for="CAMPO_4">CNPJ</label> <input class="a3formcontrol form-control" data-campo-id="@@4@@" data-nome="CNPJ" id="CAMPO_4" type="text" /></div>
+        </div>
+        
+        <div class="col-md-5">
+            <label class="a3label control-label">&nbsp;</label>
+            <button class="btn btn-sm btn-primary" id="ValidaCnpj" style="display: block;margin: 3px;" type="button">Validar CNPJ</button></div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-12">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_3">Raz&atilde;o Social</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@3@@" data-nome="Razão Social" id="CAMPO_3" type="text" />
+        </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-12">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_5">Inscri&ccedil;&atilde;o Estatual</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@5@@" data-nome="Inscrição Estatual" id="CAMPO_5" type="text" />
+        </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-10">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_6">Endere&ccedil;o</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@6@@" data-nome="Endereço" id="CAMPO_6" type="text" />
+        </div>
+        </div>
+        
+        <div class="col-md-2">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_7">N&uacute;mero</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@7@@" data-nome="Número" id="CAMPO_7" type="text" />
+        </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-8">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_8">Bairro</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@8@@" data-nome="Bairro" id="CAMPO_8" type="text" />
+        </div>
+        </div>
+        
+        <div class="col-md-4">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_9">CEP</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@9@@" data-nome="CEP" id="CAMPO_9" type="text" />
+        </div>
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-8">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_10">Cidade</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@10@@" data-nome="Cidade" id="CAMPO_10" type="text" />
+        </div>
+        </div>
+        
+        <div class="col-md-4">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_11">Estado</label> 
+            <input class="a3formcontrol form-control" data-campo-id="@@11@@" data-nome="Estado" id="CAMPO_11" type="text" />
+        </div>
+        </div>
+        </div>
+        
+        <div style="display: none">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label class="a3label control-label" for="CAMPO_19">ID</label> 
+                        <input class="a3formcontrol form-control" data-campo-id="@@19@@" id="CAMPO_19" type="text" />
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="a3label control-label" for="CAMPO_20">Login</label> 
+                        <input class="a3formcontrol form-control" data-campo-id="@@20@@" id="CAMPO_20" type="text" />
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label class="a3label control-label" for="CAMPO_21">Senha</label> 
+                        <input class="a3formcontrol form-control" data-campo-id="@@21@@" id="CAMPO_21" type="text" />
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        </div>
+        </div>
+        </div>
+        <!-- ***** Histórico do processo (direito) ***** -->
+        
+        <div class="col-md-6 border border-dark">
+        <div class="silo_card">
+        <div class="silo_card-header"><span class="silo_card-headertext">Contato</span></div>
+        
+        <div class="silo_card-body">
+        <div class="row" style="margin-top: 15px;">
+        <div class="col-md-12"><span class="a3label"></span>
+        
+        <div id="gridContainerContatos">&nbsp;</div>
+        </div>
+        </div>
+        </div>
+        </div>
+        &nbsp;
+        
+        <div class="silo_card">
+        <div class="silo_card-header"><span class="silo_card-headertext">S&oacute;cio e Administrador no Brasil</span></div>
+        
+        <div class="silo_card-body">
+        <div class="row">
+        <div class="col-md-8">
+        <div class="form-group">
+            <label class="a3label control-label" for="CAMPO_16">Representante Legal</label> 
+            <select class="a3formcontrol form-control" data-campo-id="@@16@@" data-nome="Representante Irko" id="CAMPO_16"></select>
+        </div>
+        </div>
+        </div>
+        
+        <div class="row" style="display: none;">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label class="a3label control-label" for="CAMPO_22">Grid Contato</label>
+                    <textarea class="a3formcontrol form-control" data-campo-id="@@22@@" data-nome="Grid Contato" id="CAMPO_22"></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label class="a3label control-label" for="CAMPO_17">Procurador S&oacute;cio Estrangeiro</label> 
+                <select class="a3formcontrol form-control" data-campo-id="@@17@@" data-nome="Representante Sócio Estrangeiro" id="CAMPO_17"></select>
+            </div>        
+        </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+
+    </section>
+</body>
+</html>
